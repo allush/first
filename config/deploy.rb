@@ -56,7 +56,6 @@ set :puma_access_log, "#{shared_path}/log/puma_error.log"
 set :puma_error_log, "#{shared_path}/log/puma_access.log"
 set :puma_role, :app
 set :puma_env, fetch(:rack_env, fetch(:rails_env, 'production'))
-set :puma_env, fetch(:secret_key_base, '1b76ee5f0518f9217611e35c367413592d8c22098f62b28c6354bf0154bd6298ae2dd4ff7330ae366523e520e3d66f6a1e89c675cf20d10d185def5fe70904b8')
 set :puma_threads, [0, 16]
 set :puma_workers, 0
 set :puma_init_active_record, true
