@@ -32,6 +32,8 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
+gem 'puma', '~> 2.11.0'
+
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'
@@ -41,5 +43,11 @@ group :development, :test do
 
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
+
+  gem 'capistrano', '~> 3.3.5'
+  gem 'capistrano3-puma', '~> 0.8.4', require: false
+  gem 'capistrano-rails', '~> 1.1.2', require: false
+  gem 'capistrano-bundler', '~> 1.1.4', require: false
+  gem 'capistrano-rvm', '~> 0.1.2', require: false
 end
 
