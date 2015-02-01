@@ -1,3 +1,4 @@
-class DefaultController < ActionController::Base
-
+class DefaultController < ApplicationController
+  def index
+  end
 end
