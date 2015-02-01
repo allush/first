@@ -34,7 +34,7 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 
 gem 'puma', '~> 2.11.0'
 
-gem 'mysql2'
+gem 'mysql2', '~> 0.3.17'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
